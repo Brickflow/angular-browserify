@@ -10,13 +10,6 @@
   "dependencies" :{
   },
   "devDependencies": {
-    "browserify": "*",
-    "async": "*",
-    "shelljs": "*",
-    "grunt": "*",
-    "tape": "*",
-    "phantomjs": "*"
-
   },
   "repository": {
     "type": "git",
