@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "./test/run_test.js",
-    "prepublish": "./build.js"
+    "prepublish": "./fetch.js"
   },
   "dependencies" :{
-    "AngularJS": "git://github.com/darvin/angular.js.git"
   },
   "devDependencies": {
     "browserify": "*",
@@ -21,15 +20,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/darvin/angular-browserify.git"
+    "url": "git://github.com/Brickflow/angular-browserify.git"
   },
   "keywords": [
     "Angular",
     "browserify"
   ],
-  "author": "Sergey Klimov <sergey.v.klimov@gmail.com> (http://darvin.github.com/)",
-  "license": "BSD",
+  "author": "Tamas Kokeny <tamas.kokeny.87@gmail.com> (@EggDice)",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/darvin/angular-browserify/issues"
+    "url": "https://github.com/Brickflow/angular-browserify/issues"
   }
 }
