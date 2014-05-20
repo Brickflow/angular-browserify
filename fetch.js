@@ -3,8 +3,10 @@ var fs = require('fs');
 
 function requestAngularFile(name, version) {
   var filename = 'angular';
-  if (name.length) {
+  if (name.length && name[0] !== '.') {
     filename += '-' + name;
+  } else if (name[0] === '.') {
+    filename += name;
   }
   filename += '.js';
   var url = 'http://ajax.googleapis.com/ajax/libs/angularjs/' +
@@ -15,7 +17,13 @@ function requestAngularFile(name, version) {
   });
 }
 
-['', 'touch', 'mocks', 'cookies', 'route'].forEach(function(name) {
+[
+	'', '.min',
+	'touch', 'touch.min',
+	'mocks', 
+	'cookies', 'cookies.min',
+	'route', 'route.min'
+].forEach(function(name) {
   requestAngularFile(name, process.argv[2] || '1.2.16');
 });
 
