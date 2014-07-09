@@ -22,7 +22,8 @@ function requestAngularFile(name, version) {
 	'touch', 'touch.min',
 	'mocks', 
 	'cookies', 'cookies.min',
-	'route', 'route.min'
+	'route', 'route.min',
+	'sanitize', 'sanitize.min'
 ].forEach(function(name) {
   requestAngularFile(name, process.argv[2] || '1.2.16');
 });
