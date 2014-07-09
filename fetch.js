@@ -24,6 +24,7 @@ function requestAngularFile(name, version) {
 	'cookies', 'cookies.min',
 	'route', 'route.min',
 	'sanitize', 'sanitize.min'
+	'animate', 'animate.min'
 ].forEach(function(name) {
   requestAngularFile(name, process.argv[2] || '1.2.16');
 });
