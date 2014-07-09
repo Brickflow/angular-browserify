@@ -23,7 +23,7 @@ function requestAngularFile(name, version) {
 	'mocks', 
 	'cookies', 'cookies.min',
 	'route', 'route.min',
-	'sanitize', 'sanitize.min'
+	'sanitize', 'sanitize.min',
 	'animate', 'animate.min'
 ].forEach(function(name) {
   requestAngularFile(name, process.argv[2] || '1.2.16');
