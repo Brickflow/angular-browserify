@@ -21,6 +21,7 @@ function requestAngularFile(name, version) {
 	'', '.min',
 	'touch', 'touch.min',
 	'mocks', 
+  'resource', 'resource.min',
 	'cookies', 'cookies.min',
 	'route', 'route.min',
 	'sanitize', 'sanitize.min',
