@@ -27,6 +27,6 @@ function requestAngularFile(name, version) {
 	'sanitize', 'sanitize.min',
 	'animate', 'animate.min'
 ].forEach(function(name) {
-  requestAngularFile(name, process.argv[2] || '1.2.24');
+  requestAngularFile(name, process.argv[2] || '1.3.0-rc.5');
 });
 
